@@ -1,0 +1,56 @@
+# ===========================
+# Global
+# ===========================
+.DS_Store
+Thumbs.db
+*.log
+logs/
+*.sqlite3
+*.db
+
+# ===========================
+# Python Backend Ignore
+# ===========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+env/
+.venv/
+
+# FastAPI / Uvicorn related
+instance/
+*.sqlite3
+notes_app.db
+
+# ===========================
+# Node / Next.js Frontend Ignore
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js build folders
+.next/
+out/
+
+# Environment files
+notes-frontend/.env
+notes-frontend/.env.local
+notes-frontend/.env.*.local
+
+# ===========================
+# IDE Ignore
+# ===========================
+.vscode/
+.idea/
+
+# ===========================
+# OS Ignore
+# ===========================
+*.swp
+*.swo
+
