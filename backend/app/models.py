@@ -25,6 +25,7 @@ class User(Base):
     notes = relationship("Note", back_populates="owner")
 
 
+
 class Note(Base):
     __tablename__ = "notes"
 

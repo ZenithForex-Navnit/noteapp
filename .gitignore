@@ -1,5 +1,5 @@
 # ===========================
-# Global
+# Global Ignore
 # ===========================
 .DS_Store
 Thumbs.db
@@ -9,35 +9,40 @@ logs/
 *.db
 
 # ===========================
-# Python Backend Ignore
+# Python Backend Ignore (backend/app)
 # ===========================
+# Caches and compiled files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Virtual Environments
 .env
 venv/
 env/
 .venv/
 
-# FastAPI / Uvicorn related
-instance/
-*.sqlite3
-notes_app.db
+# Database files specific to the backend
+backend/app/instance/
+backend/app/*.sqlite3
+backend/app/notes_app.db
+# notes_app.db is already listed above but being more specific is safer
 
 # ===========================
-# Node / Next.js Frontend Ignore
+# Node / Next.js Frontend Ignore (notes-frontend)
 # ===========================
-node_modules/
+# Dependencies (node_modules)
+notes-frontend/node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
 # Next.js build folders
-.next/
-out/
+notes-frontend/.next/
+notes-frontend/out/
 
-# Environment files
+# Environment files - **These will prevent the actual frontend .env files from being tracked**
 notes-frontend/.env
 notes-frontend/.env.local
 notes-frontend/.env.*.local
@@ -53,4 +58,3 @@ notes-frontend/.env.*.local
 # ===========================
 *.swp
 *.swo
-
